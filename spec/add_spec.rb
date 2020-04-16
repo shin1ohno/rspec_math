@@ -1,4 +1,4 @@
-require_relative "../add"
+require_relative "../lib/add"
 
 RSpec.describe Add do
   it "1+1->2" do

@@ -5,9 +5,15 @@ class Add
 
   def calculate
     if @args.empty?
-      0
+      default
     else
       @args.inject(&:+)
     end
+  end
+
+  private
+
+  def default
+    0
   end
 end
