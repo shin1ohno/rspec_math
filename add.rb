@@ -1,9 +1,13 @@
 class Add
   def initialize(*args)
-    @args = args
+    @args = args || []
   end
 
   def calculate
-    @args.inject(&:+)
+    if @args.empty?
+      0
+    else
+      @args.inject(&:+)
+    end
   end
 end

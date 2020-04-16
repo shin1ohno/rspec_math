@@ -12,4 +12,12 @@ RSpec.describe Add do
         Add.new(1, 2, 3).calculate
       ).to eq 6
     end
+
+  context "when no args given" do
+    it "returns 0" do
+      expect(
+        Add.new().calculate
+      ).to eq 0
+    end
+  end
 end
